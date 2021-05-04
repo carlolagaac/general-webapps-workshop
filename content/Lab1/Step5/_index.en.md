@@ -117,7 +117,7 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
 ```
 /** to allow 'W3TC' plugin write the configuration data into DB */
 define( 'W3TC_CONFIG_DATABASE', true );
-/** to allow https in WordPress, will be used in lab 2/
+/** to allow https in WordPress, will be used in lab 2 */
 $_SERVER['HTTPS'] = 'on';
 ```
 
@@ -134,6 +134,8 @@ sudo chown -R apache:apache /var/www/html
 * Finally, start hosting the Apache web server
 
 ```
-sudo service httpd start
+sudo systemctl enable httpd
+sudo systemctl start  httpd 
+sudo systemctl enable php-fpm
 sudo systemctl restart php-fpm
 ```
