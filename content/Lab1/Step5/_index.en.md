@@ -16,11 +16,22 @@ weight: 30
 
 **MacOS User:** open a **terminal** on your computer, navigate to the folder where your **.pem key file** is stored, and paste the connection command.
 
-* After connection successes, run the following command to install Apache and MySQL on your instance
+* After connection success, run the following command to install Apache, SSL  and MySQL on your instance
 
 ```
 sudo yum install -y httpd
+sudo yum install -y mod_ssl
 sudo yum install -y mysql
+```
+
+* We now need to modify the httpd.conf file to allow https access
+```
+sudo nano /etc/httpd/conf/httpd.conf
+```
+
+* Find the Listen 80 line and change to the following and then save the file with Ctrl-X and Y to save
+```
+Listen 80 443
 ```
 
 * Set the environment variable of MySQL in your computer, replace `<your-endpoint>` to the endpoint which can be found in [**RDS console**](https://console.aws.amazon.com/rds/home?region=us-east-1#databases:)→ your database
