@@ -7,7 +7,7 @@ weight: 30
 
 * Visit [**IAM console**](https://console.aws.amazon.com/iam/home?region=us-east-1#/home)
 * Click **Users** on the left menu, then click **Add user** 
-* Enter`wordpress-user` in **username**
+* Enter `Wordpress` in **username**
 * For **Select AWS access type**, select **Programmatic access** and click **Next: Permissions**
 * For **Set permissions**, select **Attach existing policies directly** Search and attach **CloudFrontFullAccess** and **AmaoznS3FullAccess** 
 * Click **Next: Tags** → **Next: Review** → **Create user** 
@@ -34,14 +34,28 @@ weight: 30
 * After few seconds, it will be redirected to Login page, 
 * Enter your **username** and **password**, and click **Login** button, you will see the **admin** page,
 * In admin page, click **Plugins** on the left menu, 
-* Click **Add New**, search `w3 total cache` and click **Install Now → Activate**,
-* Click **Performance/General setting** on the left menu, 
-* In **CDN** section, for **CDN type**, select **Origin Push:S3**, 
-* For **CDN**, make sure it is **Enable** and Click **Save all Settings**
+* Click **Add New**, search `wp offload media lite` and click **Install Now → Activate**,
+* Click **Settings** on the left menu, 
 
-![](/images/lab1-22.png)
 
-![](/images/lab1-23.png)
+![](/images/lab1_22_wp_plugin_offload_media_install.png)
+
+* In **Offload Media Lite**,
+* Choose **Storage Provider**
+* Choose **I understand the risks but I'd like to store access keys in the database anyway**
+* Now add the **Access Key ID** and **Secret Access Key**  
+* Click **Next**
+
+![](/images/lab1_23_access_key_secret_key.png)
+
+* Choose to **Create Bucket** at the bottom of the screen, it will open up a new screen
+* Add ``wp-workshop-wordpress-yourfirstnamelastname``
+* Then click on **Create New Bucket**
+
+![](/images/lab1_23a_create_bucket.png)
+
+* Since we are not using CloudFront just yet, we need to click **Disable "Block Public Access"**
+![](/images/lab1_23b_block_all_public_access.png)
 
 * Click **Performance/CDN** on the left menu, scroll down to find **Configuration: Objects** section 
 * Copy and paste the **Access key ID** and **Secret key** from IAM user creation page

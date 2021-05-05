@@ -135,8 +135,8 @@ $_SERVER['HTTPS'] = 'on';
 * Run the following command to deploy WordPress on your computer: 
 
 ```
-sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2 php-gd
-sudo yum -y install php-xml 
+sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2 
+sudo yum -y install php-xml php-gd
 cd /home/ec2-user
 sudo cp -r wordpress/* /var/www/html/
 sudo chown -R apache:apache /var/www/html
