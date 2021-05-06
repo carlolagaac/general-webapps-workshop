@@ -65,17 +65,15 @@ weight: 30
 * Choose **Image** then upload your image
 * Finally Click on **Update**
 
-![](/images/lab1-27.png)
+![](/images/lab1_24modify_wordpress_post.png)
 
 
-* Click the **Page/All pages** on the left menu, click **Simple page** to edit it click “+” icon on the top left and insert a sample image, then click **Update** to confirm the change. [download sample image](https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_REV_SQ.8c88ac215fe4e441dc42865dd6962ed4f444a90d.png)
-* Click **Performance/CDN** the left menu and click **export the media library, wp-includes, theme files**  
-* Click **custom files → start** button to export file from EC2 to S3 bucket
+* Now **View Post**
+![](/images/lab1_24view_post.png)
 
-![](/images/lab1-24.png)
 
-![](/images/lab1-25.png)
-
-* Now, you can view your sample page in `<your ec2 domain>/index.php/sample-page/`
+* Finally let's check S3
+* Visit [**S3 console**](//https://s3.console.aws.amazon.com)
+* Find the S3 bucket you were writing to and drill down to view the contents
     
-![](/images/lab1-26.png)
+![](/images/lab1_26_bucket_contents.png)
