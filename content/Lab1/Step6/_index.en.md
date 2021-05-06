@@ -51,16 +51,19 @@ weight: 30
 * Choose to **Create Bucket** at the bottom of the screen, it will open up a new screen
 * Add ``wp-workshop-wordpress-yourfirstnamelastname``
 * Then click on **Create New Bucket**
+* **NOTE** If you are AWS you need to disable **Block Public Access settings for this account** within the AWS S3 Console
 
 ![](/images/lab1_23a_create_bucket.png)
 
 * Since we are not using CloudFront just yet, we need to click **Disable "Block Public Access"**
 ![](/images/lab1_23b_block_all_public_access.png)
 
-* Click **Performance/CDN** on the left menu, scroll down to find **Configuration: Objects** section 
-* Copy and paste the **Access key ID** and **Secret key** from IAM user creation page
-* For **Bucket**, enter `wp-workshop-<custom name>` and click **Create as new bucket**
-* Click **Test S3 upload** to ensure connection succeeded and click **Save all Settings**
+* Let's add an image to a post and see it get added to S3 
+* Download the following image or an image of your choice [download sample image](https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_REV_SQ.8c88ac215fe4e441dc42865dd6962ed4f444a90d.png)
+* Go to **Posts** -> Choose an existing post or create a new one -> **Edit Posts** 
+* When in the Wordpress editor click on **[+]** and then Add block
+* Choose **Image** then upload your image
+* Finally Click on **Update**
 
 ![](/images/lab1-27.png)
 
