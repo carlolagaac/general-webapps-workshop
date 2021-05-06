@@ -6,7 +6,7 @@ weight: 30
 
 * Visit EC2 instance page, select the public WordPress instance created in Lab1
 * Click **Actions** → **Image and templates** → **Create image**
-* Enter the **Image name** and click **Create image**
+* Enter the **Image name** `WordpressImage` and click **Create image**
 
 ![](/images/lab2-1.png)
 
@@ -20,6 +20,7 @@ weight: 30
 ![](/images/lab2-3.png)
 
 * In **Basic Configuration** section, enter the name `wordpress-alb`
+* In **Listeners**  add **HTTPS**
 * In **Availability Zones**, for **VPC**, choose **Vpc / vpc-stack** created by CloudFormation
 * For **Availability Zones**, select **us-east-1a/PublicSubnet0** and **us-east-1b/PublicSubnet1**
 
