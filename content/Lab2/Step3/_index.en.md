@@ -30,7 +30,7 @@ weight: 30
 * For **Minimum TTL**, enter `0`
 * For **Maximum TTL**, enter `31536000`
 * For **Default TTL**, enter `300`
-* For **Forward Cookies**, select **comment_author_*, comment_author_email_*, comment_author_url_*, wordpress_*, wordpress_logged_in, wordpress_test_cookie, wp-setting-** 
+* For **Forward Cookies** > **Whitelist** select **comment_author_*, comment_author_email_*, comment_author_url_*, wordpress_*, wordpress_logged_in, wordpress_test_cookie, wp-setting-** 
 
 * For **Query String Forwarding and Caching**, select **Forward all, cache based on all**
 * For **Smooth Streaming**, select **No**
