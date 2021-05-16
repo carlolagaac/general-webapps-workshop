@@ -25,7 +25,7 @@ popd
 ```
  * Run hugo to generate the site, and point your browser to http://localhost:1313
 ```bash
-hugo serve -D
+hugo server -D
 ```
 
 ## License
