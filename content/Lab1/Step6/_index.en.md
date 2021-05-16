@@ -66,3 +66,4 @@ weight: 30
 * Visit [**S3 console**](https://s3.console.aws.amazon.com)
 * Find the S3 bucket you were writing to and drill down to view the contents
 ![](/images/lab1_26_bucket_contents.png)
+
